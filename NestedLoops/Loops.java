@@ -8,34 +8,34 @@
 public class Loops
 {
     // instance variables - replace the example below with your own
-    public static void main(){
-        problemA();
-    }
-
     /**
      * Constructor for objects of class Loops
      */
-    public static void problemA()
+    public Loops()
     {
-        // initialise instance variables
-        for(int n = 2; n <= 6; n++){
-            // code for this loop
-            for(int n = 0; n <= 6; n++){
-                System.out.println(n);
-            }
-            System.out.println();
+        System.out.println("This is A,");
+        System.out.println();
+        for(int i = 1; i < 6; i++){
+            for(int j = 0; j < i; j++){
+            System.out.print(i);
         }
-   
-   
-    
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    
+    }
+    System.out.println("This is B,");
+    System.out.println();
+    for(int i = 5; i > 1; i--){
+        for(int j = 8; j > 0; j--){
+            System.out.print(i);
+        }
     }
 }
+    
+    public void QuestionC(int n){
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < n; j++){
+                System.out.print(n + " " );
+        }
+        System.out.println();
+}
+}
+    }
 
