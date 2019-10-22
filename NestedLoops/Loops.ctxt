@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=Loops
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Loops\ here.\r\n\r\n\ @author\ (rreid)\r\n\ @version\ (918)\r\n
-comment1.params=
-comment1.target=Loops()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Loops\r\n
-comment2.params=n
-comment2.target=void\ QuestionC(int)
-numComments=3
