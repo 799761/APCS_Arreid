@@ -1,11 +1,14 @@
 #BlueJ class context
 comment0.target=StringChecker
+comment0.text=\r\n\ StringCheck\ Lab\ 1030\r\n\r\n\ @author\ (Roxy\ "the\ Rock"\ Reid)\r\n\ @version\ (1030)\r\n
 comment1.params=
 comment1.target=StringChecker()
-comment2.params=
-comment2.target=void\ getUserInput()
-comment3.params=p\ x
-comment3.target=java.lang.String[]\ extendArray(java.lang.String[],\ int)
-comment4.params=
-comment4.target=void\ main()
-numComments=5
+comment2.params=str\ key
+comment2.target=java.util.ArrayList\ wordChecker(java.lang.String[],\ java.lang.String)
+comment3.params=
+comment3.target=void\ getUserInput()
+comment4.params=p\ x
+comment4.target=java.lang.String[]\ extendArray(java.lang.String[],\ int)
+comment5.params=
+comment5.target=void\ main()
+numComments=6

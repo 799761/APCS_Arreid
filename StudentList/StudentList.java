@@ -1,4 +1,4 @@
-
+import java.util.*;
 /**
  * Write a description of class StudentList here.
  *
@@ -8,15 +8,18 @@
 public class StudentList
 {
     // instance variables - replace the example below with your own
-    private int x;
-
     /**
      * Constructor for objects of class StudentList
      */
     public StudentList()
     {
         // initialise instance variables
-        x = 0;
+        ArrayList<String> stuObjects = new ArrayList<>();
+        
+        names.add("new student record");
+        names.delete("delete student record");
+        names.print(System.out.println(record));
+        
     }
 
     /**
@@ -25,9 +28,10 @@ public class StudentList
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
+    public static void main (String args[])
     {
         // put your code here
-        return x + y;
+        ArrayList<String> stuObjects = new ArrayList<String>(
+            Arrays.asList(""));
     }
 }

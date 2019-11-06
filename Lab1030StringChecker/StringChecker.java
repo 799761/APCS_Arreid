@@ -1,20 +1,33 @@
-
+import java.util.*;
 /**
  * StringCheck Lab 1030
  *
  * @author (Roxy "the Rock" Reid)
  * @version (1030)
  */
-import java.util.Scanner;
-import java.util.ArrayList;
+
 public class StringChecker
 {
-    private String keyWord = "";
-    private ArrayList<String> words = new ArrayList<String>();
+    private String keyWord = "cat";
+    private ArrayList<String> wordList = new ArrayList<String>();
+    private String[] wordArray = { "cat" , "catcher" , "Catchup"};
+    
     
     public StringChecker(){
-         //  get user input
-         getUserInput();
+         // loadWords();
+         // getKey();
+    }
+    
+    public ArrayList<String> wordChecker(String[] str, String key){
+        ArrayList<String> tempList = new ArrayList<String>();
+        for(int i = 0; i < str.length; i++){
+            if(str[i] != null){
+                if(str[i].indexOf(key) != -1){
+                    tempList.add(str[i]);
+                }
+            }
+        }
+        return tempList;
     }
     
     public void getUserInput(){
@@ -25,10 +38,10 @@ public class StringChecker
         while(!inputStr.equals("quit")){
                 inputStr = kb.nextLine();
                 if(!inputStr.equals("quit")){
-                    words.add(inputStr);
+                    wordList.add(inputStr);
                 }
             }
-                
+         
     }
    
     public String[] extendArray(String[] p, int x){
@@ -39,8 +52,8 @@ public class StringChecker
         return newArray;
     }
    
-    
     public static void main(){
-     StringChecker sc = new StringChecker();   
+     StringChecker sc = new StringChecker();
+     ArrayList<String> strings = sc.wordChecker(sc.wordArray, sc.keyWord);
     }
 }
