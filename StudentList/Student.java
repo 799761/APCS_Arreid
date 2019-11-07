@@ -19,12 +19,19 @@ public class Student
      */
     public Student()
     {
+        fName = "First";
+        lName = "Last";
+        stuNumber = 0;
+        gpa = 0.0;
     }
 
     public String fullName()
     {
         String full = lName;
-        full += ", " + fName + " " + mName;
+        full += ", " + fName;
+        if(mName != null && mName.equals("")) {
+            full += " " + mName;
+        }
         return full;
     }
     public double gpa()
@@ -36,21 +43,21 @@ public class Student
         return stuNumber;
     }
     
-    void setFirstName ( String firstName )
+    public void setFirstName ( String firstName )
     {
         fName = firstName;
     }
-    void setMiddleName ( String middleName )
+    public void setMiddleName ( String middleName )
     {
         mName = middleName;
     }
     
-    void setLastName ( String lastName )
+    public void setLastName ( String lastName )
     {
         lName = lastName;
     }
     
-    void setStudentInfo ( int newStuNumber, double newGpa )
+    public void setStudentInfo ( int newStuNumber, double newGpa )
     {
          stuNumber = newStuNumber;
          gpa = newGpa;

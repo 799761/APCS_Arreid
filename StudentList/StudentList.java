@@ -5,11 +5,12 @@ import java.util.*;
  * @author (rreid)
  * @version (10/29)
  */
+import java.util.*;
 
 public class StudentList
 {
     // instance variables - replace the example below with your own
-    ArrayList<String> stuObjects;
+    ArrayList<Student> stuObjects;
     
     /**
      * Constructor for objects of class StudentList
@@ -17,7 +18,7 @@ public class StudentList
     public StudentList()
     {
         // initialise instance variables
-        stuObjects = new ArrayList<>();
+        stuObjects = new ArrayList<Student>();
         
         //names.add("new student record");
         //names.delete("delete student record");
@@ -38,14 +39,19 @@ public class StudentList
     public void addStudent(String fullName)
     {
         int comma = fullName.indexOf(',');
+        Scanner in = new Scanner(System.in);
         String fName="";
         String mName="";
         String lName="";
         Student newStudent = new Student();
         if (comma > 0) {          // Last, First ... and maybe Middle
-            lName = fullName.substring(0,comma-1);
+            lName = fullName.substring(0,comma);
             String remainder = fullName.substring(comma+1);
             int space = remainder.indexOf(' ');
+            while(space==0) {   // get rid of extra spaces after comma before fName
+                remainder = remainder.substring(1);
+                space = remainder.indexOf(' ');
+            }
             if (space > 0) {        // must be a Middle name too
                 fName = remainder.substring(0,space-1);
                 mName = remainder.substring(space+1);
@@ -55,11 +61,11 @@ public class StudentList
         } else {                    // First [maybe Middle] Last
             int space = fullName.indexOf(' ');
             if (space > 0) {        // must be a Middle name too
-                fName = fullName.substring(0,space-1);
+                fName = fullName.substring(0,space);
                 String remainder = fullName.substring(space+1);
                 space = remainder.indexOf(' ');
                 if (space > 0) {        // must be a Middle name too
-                    mName = remainder.substring(0,space-1);
+                    mName = remainder.substring(0,space);
                     lName = remainder.substring(space+1);
                 } else {
                     lName = remainder;
@@ -70,6 +76,13 @@ public class StudentList
         newStudent.setFirstName(fName);
         newStudent.setMiddleName(mName);
         newStudent.setLastName(lName);
+        System.out.println("  Student Number: ");
+        int num = in.nextInt();
+        System.out.println("  Student GPA: ");
+        double gpa = in.nextDouble();
+        newStudent.setStudentInfo(num, gpa);
+        
+        stuObjects.add(newStudent);
     }
     
     public void deleteStudent(String lastName)
@@ -109,6 +122,18 @@ public class StudentList
         /*
          *  Clears the screen and then prints the list to the screen.  Does not print null records.
          */
+        //System.out.print('\u000C');   // clear screen
+        System.out.println("----- Student List -----");
+        for(int i = 0; i < stuObjects.size(); i++){
+            Student stud = stuObjects.get(i);
+            if(stud != null) {
+                System.out.print("   " + stud.stuNumber() + " ");
+                System.out.print(stud.fullName() + " ");
+                System.out.print("GPA: " + stud.gpa() + " ");
+                System.out.println();
+            }
+        }
+        System.out.println("-----------------------");
     }
     public void printStudent(String lastName)
     {
@@ -120,9 +145,10 @@ public class StudentList
     public void printStudent(int stuNumber)
     {
         /*    
-         * clears the screen and then prints a student student with the input student number to the screen.
+         * clears the screen and then prints a student with the input student number to the screen.
          * If the Student does not exist, print message to the console: "Student does not exist."
          */
+        //System.out.print(stud.get(i) + " ");
     }
     public void SortStudents(String lastName)
     {        
@@ -146,8 +172,5 @@ public class StudentList
         return filteredList;
     }
 
-    public static void main (String args[])
-    {
-        // put your code here
-    }
+    
 }
