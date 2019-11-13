@@ -2,7 +2,7 @@
 comment0.target=StudentList
 comment1.params=
 comment1.target=StudentList()
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ StudentList\n
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ StudentList\r\n
 comment10.params=stuNumber
 comment10.target=void\ printStudent(int)
 comment11.params=lastName
@@ -13,7 +13,7 @@ comment13.params=key
 comment13.target=java.util.ArrayList\ filterSearchStudentList(java.lang.String)
 comment2.params=fullName
 comment2.target=void\ addStudent(java.lang.String)
-comment2.text=\n\ addStudent\n\ Allows\ the\ user\ to\ add\ a\ student\ to\ the\ end\ of\ the\ List.\n\ For\ each\ student,\ the\ user\ can\ imput\ a\ student\ number,\ a\ GPA,\ and\ a\ student\ name.\n\ Names\ may\ be\ entered\ in\ one\ of\ four\ formats\:\:\n\ 1.\ Last,\ First\ \ \ \n\ 2.\ Last,\ First\ Middle\ \ \ \n\ 3.\ First\ Last\ \ \ \n\ 4.\ First\ Middle\ Last\n
+comment2.text=\r\n\ addStudent\r\n\ Allows\ the\ user\ to\ add\ a\ student\ to\ the\ end\ of\ the\ List.\r\n\ For\ each\ student,\ the\ user\ can\ imput\ a\ student\ number,\ a\ GPA,\ and\ a\ student\ name.\r\n\ Names\ may\ be\ entered\ in\ one\ of\ four\ formats\:\:\r\n\ 1.\ Last,\ First\ \ \ \r\n\ 2.\ Last,\ First\ Middle\ \ \ \r\n\ 3.\ First\ Last\ \ \ \r\n\ 4.\ First\ Middle\ Last\r\n
 comment3.params=lastName
 comment3.target=void\ deleteStudent(java.lang.String)
 comment4.params=stuNumber

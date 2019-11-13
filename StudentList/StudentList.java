@@ -1,4 +1,3 @@
-import java.util.*;
 /**
  * Write a description of class StudentList here.
  *
@@ -6,7 +5,6 @@ import java.util.*;
  * @version (10/29)
  */
 import java.util.*;
-
 public class StudentList
 {
     // instance variables - replace the example below with your own

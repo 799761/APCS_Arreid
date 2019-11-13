@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class StudListRunner here.
  *
@@ -6,7 +5,6 @@
  * @version (10/29)
  */
 import java.util.*;
-
 public class StudListRunner
 {
     // instance variables - replace the example below with your own
@@ -21,11 +19,6 @@ public class StudListRunner
         
       /*
        * 
-       studList.addStudent("Roxanne Reyes Reid");
-        studList.addStudent("Mary Reid");
-        studList.addStudent("Reid, Georgia");
-        studList.addStudent("Reid, Roxy");
-        studList.printList();
         */
         while (menuChoice!=0)
         {

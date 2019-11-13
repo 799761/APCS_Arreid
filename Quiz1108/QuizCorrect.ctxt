@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=QuizCorrect
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ QuizCorrect\ here.\r\n\r\n\ @author\ (rreid)\r\n\ @version\ (11/13)\r\n
+comment1.params=
+comment1.target=QuizCorrect()
+comment2.params=nums
+comment2.target=java.util.ArrayList\ makeList(int[])
+comment3.params=nums
+comment3.target=int[]\ reverseList(java.util.ArrayList)
+comment4.params=
+comment4.target=void\ main()
+numComments=5
